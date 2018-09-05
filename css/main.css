@@ -1,0 +1,149 @@
+body{
+  margin: 0;
+}
+ul{
+  margin: 0;
+}
+img{
+  box-sizing: border-box;
+  width:100%;
+  height:100px;
+}
+.navbar {
+  height:50px;
+  background-color: grey;
+  color:white;
+}
+.navbar ul {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  padding: 0;
+}
+.navbar li {
+  display: inline-flex;
+  flex-direction: row;
+  width: 100px;
+  margin: 10px 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+.welcome{
+  margin: auto;
+  width: 100%;
+  height:400px;
+  color: white;
+  background-image: url("/images/jumboBack.jpeg");
+  background-position: 0px 0px;
+	background-repeat: repeat-x;
+	animation: animatedBackground 3s linear infinite;
+}
+.welcome{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.welcome h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main{
+  display:flex;
+  flex-direction: row;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  width: 80%;
+}
+.picBox{
+  width: 50%;
+  border: 1px solid black;
+  margin:auto;
+}
+.picBox img{
+  display: flex;
+  margin: auto;
+  margin-top:10px;
+  width: 60%;
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 150px;
+  justify-content: center;
+  align-items: center;
+  border: 10px double black;
+}
+.picBox p{
+  margin: auto;
+  text-align: center;
+  margin-top: 10px;
+  width: 80%;
+}
+footer{
+  height: 25px;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+}
+footer div{
+  width:20%;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+@media screen and (max-width:650px)  {
+  .welcome h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+  }
+  .main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .picBox{
+    width: 50%;
+    margin: 10px 0px;
+  }
+}
+
+@media screen and (max-width:500px)  {
+  .welcome{
+    width: 100%;
+    height:199px;
+    background-image: none;
+    background-color: black;
+  }
+  .welcome h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+  }
+  .main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .picBox{
+    width: 50%;
+    margin: 10px 0px;
+  }
+}
